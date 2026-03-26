@@ -1,199 +1,65 @@
-# Java Script Template TOP
-# 🚀 Webpack Starter Template
+# 🌤️ Weather App
 
-A minimal, production-ready starting template for any frontend JavaScript project using **Webpack 5**.
+A simple and interactive weather application that allows users to search for any location and view current weather conditions using the Visual Crossing Weather API.
 
-This repository comes pre-configured with:
+## 🚀 Features
 
-- ✅ Webpack 5  
-- ✅ Webpack Dev Server  
-- ✅ HTML template injection  
-- ✅ CSS support  
-- ✅ Source maps  
-- ✅ ES Modules  
-- ✅ GitHub Pages deployment support  
+- 🔍 Search weather by location
+- 🌡️ Displays:
+  - Temperature
+  - Feels like temperature
+  - Weather conditions
+  - Humidity
+- ⚡ Uses modern JavaScript (`async/await`)
+- ❌ Handles invalid locations with error messages
+- ⏳ Shows a loading state while fetching data
+- ⌨️ Supports both button click and Enter key submission
 
-Perfect for quickly bootstrapping new projects without reconfiguring Webpack every time.
+## 🛠️ Built With
 
----
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Visual Crossing Weather API
 
-## 📦 Features
+## 📦 Installation
 
-- Development mode configuration
-- Auto-generated HTML via `html-webpack-plugin`
-- CSS support via `style-loader` + `css-loader`
-- HTML imports via `html-loader`
-- Live reloading dev server
-- Clean `dist/` builds
-- GitHub Pages deployment using subtree
+1. Clone the repository
+2. Navigate into the project folder
+3. Open `index.html` in your browser
 
----
+## 🔑 API
+
+This project uses the [Visual Crossing Weather API](https://www.visualcrossing.com/).
+
+If needed, you can replace the API key in the JavaScript file with your own.
 
 ## 📁 Project Structure
 
-```text
-project-name/
-│
-├── dist/               # Production build output (auto-generated)
-├── src/
-│   ├── index.js        # Entry point
-│   └── template.html   # HTML template
-│
-├── webpack.config.js
-├── package.json
-└── README.md
-```
+- `index.html` – main HTML file
+- `script.js` – application logic
+- `style.css` – basic styling
 
----
+## 🧠 What I Learned
 
-## 🛠 Installation
+- Working with asynchronous JavaScript (`async/await`)
+- Fetching and handling API data
+- Error handling in network requests
+- DOM manipulation
+- Handling form submission events
 
-Clone the repository:
+## ✨ Future Improvements
 
-```bash
-git clone https://github.com/wadhwashivam/JSTemplateTOP.git
-cd your-repo
-```
+- Add weather icons 🌤️
+- Toggle between °C and °F
+- Dynamic backgrounds based on weather
+- Extended forecast view
+- Improved UI/UX design
 
-Install dependencies:
+## 📸 Demo
 
-```bash
-npm install
-```
-
----
-
-## 💻 Development
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-This runs:
-
-```bash
-webpack serve
-```
-
-- Opens a local dev server
-- Enables live reloading
-- Uses `eval-source-map` for debugging
-- Watches `template.html` for changes
-
----
-
-## 🏗 Build for Production
-
-```bash
-npm run build
-```
-
-This runs:
-
-```bash
-webpack
-```
-
-- Outputs files to `dist/`
-- Cleans `dist/` before each build
-- Bundles all JS and CSS into `main.js`
-
----
-
-## 🌍 Deploy to GitHub Pages
-
-This template supports deployment using:
-
-```bash
-npm run deploy
-```
-
-Which runs:
-
-```bash
-git subtree push --prefix dist origin gh-pages
-```
-
-Make sure:
-
-1. Your repository has a `gh-pages` branch.
-2. GitHub Pages is configured to deploy from that branch.
-
----
-
-## ⚙️ Webpack Configuration Overview
-
-### Entry
-
-```js
-entry: "./src/index.js"
-```
-
-### Output
-
-- File: `main.js`
-- Directory: `dist/`
-- Auto-clean enabled
-
-### Loaders
-
-- CSS → `style-loader`, `css-loader`
-- HTML → `html-loader`
-
-### Plugins
-
-- `HtmlWebpackPlugin` injects the bundle into `template.html`
-
-### Dev Server
-
-- Watches `./src/template.html`
-- Live reload enabled
-
----
-
-## 📜 Available Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build project |
-| `npm run deploy` | Deploy to GitHub Pages |
-| `npm test` | Placeholder test script |
-
----
-
-## 🧠 How to Use This Template for a New Project
-
-1. Click **"Use this template"** on GitHub  
-2. Rename the project  
-3. Update:
-   - `package.json` → `name`, `homepage`, `repository`
-   - README project title  
-4. Start building inside `src/index.js`
-
----
-
-## 🧩 Tech Stack
-
-- Webpack 5
-- Webpack Dev Server
-- ES Modules
-- HTML + CSS loaders
-- ESLint
-- Prettier
-
----
-
-## 📌 Notes
-
-- This config runs in **development mode** by default.
-- You can extend it using `webpack-merge` for separate dev and prod configs.
-- Add Babel or TypeScript if needed.
-
----
+Add a screenshot or live demo link here
 
 ## 📄 License
 
-No License
+This project is open source and available under the [MIT License](LICENSE).
