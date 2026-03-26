@@ -33,7 +33,17 @@ btn.addEventListener("click", async (event) => {
   try {
     const weather = await fetchData(location);
 
-    box.innerHTML = `<span>Temperature: ${weather.temp}</span><br><span>Feels Like: ${weather.feelslike}</span><br> <span>Conditions: ${weather.conditions}</span><br><span>Humidity: ${weather.humidity}</span>`;
+    function fToC(temperature){
+      let tempInF = temperature;
+      let tempInC = (tempInF - 32)/1.8;
+      return tempInC;
+    }
+
+    let temp = fToC(weather.temp);
+    let feelsLike = fToC(weather.feelslike);
+    let humidity = fToC(weather.humidity);
+
+    box.innerHTML = `<span>Temperature: ${temp} Celsius</span><br><span>Feels Like: ${feelsLike} Celsius</span><br> <span>Conditions: ${weather.conditions}</span><br><span>Humidity: ${humidity} Celsius</span>`;
   } catch (error) {
     box.innerHTML = `<span style="color:red;">${error.message}</span>`;
     console.error(error);
