@@ -56,10 +56,6 @@ If needed, you can replace the API key in the JavaScript file with your own.
 - Extended forecast view
 - Improved UI/UX design
 
-## 📸 Demo
-
-Add a screenshot or live demo link here
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
